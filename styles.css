@@ -13,8 +13,11 @@
     --black: #000000;
     --font-family: "ohm-bold", sans-serif, "400", normal;
     --font-family2: "forma-djr-micro", sans-serif;
-
     --danishRed: #C8102E;
+    --main-background: #fcfeff;
+    --main-font-color: #3b3a3c;
+    --main-accent: #d96061;
+    --main-background-darker: #e9ebeb;
 }
 
 body{
@@ -40,7 +43,7 @@ a:visited{
 #container{
     width: 100%;
     height: auto;
-    background-color: var(--background);
+    background-color: var(--main-background);
     
 }
 
@@ -121,8 +124,7 @@ nav{
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    color: var(--white);   
- /*   background: url("projects/maze10.webp"); */
+    color: var(--main-font-color);   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,12 +136,11 @@ nav{
     font-size: 10vw;
     height: 15vh;
     padding-top: 1rem;
-    filter: drop-shadow(10px 12px 10px black);
     margin-top: 3rem;
 }
 
 .intro-arrow{
-    color: var(--white);
+    color: var(--main-font-color);
     transform: scale(3);
     margin: 0rem auto 0rem auto;
     animation: arrowDown 2s ease-in-out 0.5s infinite forwards;
@@ -163,7 +164,6 @@ nav{
         font-size: 15vw;
         height: 15vh;
         padding-top: 0rem;
-        filter: drop-shadow(10px 12px 10px black);
         margin-top: 7rem;
     }
 }
@@ -173,7 +173,7 @@ nav{
 #about{
     max-width: 100vw;
     height: 100vh;
-    color: var(--white);
+    color: var(--main-font-color);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -183,18 +183,17 @@ nav{
 }
 
 .about-p{
-    font-family: forma-djr-micro, sans-serif;
+    font-family: var(--font-family2);
     font-weight: 200;
     font-style: normal;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--main-font-color);
     width: 30%;
     height: auto;
     line-height: 1.5;
     text-align: left;
     padding: 1.5rem;
     border-radius: 15px;
-    filter: drop-shadow(10px 12px 10px black);
     z-index: 31;
 }
 
@@ -216,7 +215,7 @@ nav{
     .about-p{
         font-family: var(--font-family2);
         font-size: 1.5rem;
-        color: var(--white);
+        color: var(--main-font-color);
         width: 90%;
     }
     .about-img{
@@ -234,341 +233,18 @@ nav{
     }
 }
 
-/* projects */
-
-#projects{
-    width: 100vw;
-    height: 120vh;
-    color: var(--white);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-
-}
-
-.projects-title{
-    font-family: var(--font-family);
-    font-size: 11vw;
-    margin: 0 0 1rem -3rem;
-    writing-mode: vertical-lr;
-    opacity: 0.5;
-}
-
-/* projects shadow dog*/
-
-.projects-shadow-bite{
-    max-width: 15rem;
-    height: auto;
-    position: absolute;
-    left: 35%;
-    top: 40%;
-    z-index: 50;
-    filter: drop-shadow(10px 12px 10px black);
-    border-radius: 10px;
-    opacity: 0.5;
-}
-
-.projects-shadow-run{
-    max-width: 15rem;
-    height: auto;
-    position: absolute;
-    right: 20%;
-    top: 70%;
-    z-index: 50;
-    filter: drop-shadow(10px 12px 10px black);
-    border-radius: 10px;
-    opacity: 0.5;
-}
-
-/* projects jimmy sakurai */
-
-.projects-sakurai{
-    max-width: 20rem;
-    height: auto;
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    opacity: 0.5;
-    filter: drop-shadow(10px 12px 10px black);
-    border-radius: 10px;
-}
-
-/* projects cph cartel */
-
-.projects-cph-cartel{
-    max-width: 20rem;
-    height: auto;
-    position: absolute;
-    left: 30%;
-    top: 10%;
-    z-index: 50;
-    filter: drop-shadow(10px 12px 10px black);
-    border-radius: 10px;
-    opacity: 0.5;
-}
-
-/* projects jazzcup */
-
-
-@keyframes spin {
-    0% {transform: rotateZ(0deg);}
-    100% {transform: rotateZ(1800deg);} 
-}
-
-
-.vinyl-spins{
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: linear;
-}
-
-.projects-vinyl{
-    width: 30rem;
-    height: auto;
-    position: absolute;
-    z-index: 9;
-    transform: rotateZ(0);
-    top: 50%;
-    right: 35%;
-    opacity: 0.5;
-}
-
-/* mondrian */ 
-
-.projects-mondrian{
-    max-width: 30rem;
-    height: auto;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 13%;
-    filter: drop-shadow(10px 12px 10px black);
-    opacity: 0.5;
-}
-
-/* balls */ 
-
-.projects-balls{
-    max-width: 30rem;
-    height: auto;
-    border-radius: 10px;
-    position: absolute;
-    top: 15%;
-    left: 45%;
-    filter: drop-shadow(10px 12px 10px black);
-    opacity: 0.5;
-}
-.playground-object{
-transition: all 0.5s ease-in-out;
-}
-
-.playground-object:hover{
-    opacity: 1;
-}
-
-/* stardust lab */ 
-
-.bikini-gif{
-    position: absolute;
-    width: 40rem;
-    height: auto;
-    top: -10%;
-    left: 2%;
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
-}
-
-.bikini-gif:hover{
-    opacity: 1;
-
-}
-
-@media only screen and (max-width: 1250px){
-    #projects{
-        height: 100vh;    
-    }
+#greedy{
+    display: grid;
    
-    .projects-title{
-        margin: 0 0 1rem -2rem;
-    }
-    .projects-shadow-bite{
-        max-width: 10rem;
-    }
-    .projects-shadow-run{
-        max-width: 10rem;
-    }
-    .projects-sakurai{
-        max-width: 10rem;
-        top: 30%;
-    }
-    .projects-cph-cartel{
-        max-width: 15rem;
-        top: 20%;
-    }
-    .projects-vinyl{
-        width: 15rem;
-    }
-    .projects-mondrian{
-        max-width: 15rem;
-    }
-    .projects-balls{
-        max-width: 15rem;
-        top: 25%;
-        left: 60%;
-    }
-    .bikini-gif{
-        width: 20rem;
-        top: 5%;
-        left: 10%;
-    }
-
-}
-
-@media only screen and (max-width: 800px){
-    #projects{
-        height: 100vh;    
-    }
-   
-    .projects-title{
-        margin: 0 0 1rem -1rem;
-    }
-    .projects-shadow-bite{
-        max-width: 5rem;
-    }
-    .projects-shadow-run{
-        max-width: 5rem;
-    }
-    .projects-sakurai{
-        max-width: 5rem;
-        top: 30%;
-    }
-    .projects-cph-cartel{
-        max-width: 9rem;
-        top: 20%;
-    }
-    .projects-vinyl{
-        width: 9rem;
-    }
-    .projects-mondrian{
-        max-width: 9rem;
-    }
-    .projects-balls{
-        max-width: 9rem;
-        top: 25%;
-        left: 60%;
-    }
-    .bikini-gif{
-        width: 12rem;
-        top: 5%;
-        left: 10%;
-    }
-
-}
-
-@media only screen and (max-width: 500px){
-    #projects{
-        height: 100vh;    
-    }
-   
-    .projects-title{
-        margin: 0 0 1rem -1rem;
-    }
-    .projects-shadow-bite{
-        max-width: 5rem;
-    }
-    .projects-shadow-run{
-        max-width: 5rem;
-    }
-    .projects-sakurai{
-        max-width: 5rem;
-        top: 40%;
-    }
-    .projects-cph-cartel{
-        max-width: 9rem;
-        top: 20%;
-        left: 35%;
-    }
-    .projects-vinyl{
-        width: 9rem;
-        left: 45%;
-    }
-    .projects-mondrian{
-        max-width: 9rem;
-    }
-    .projects-balls{
-        max-width: 9rem;
-        top: 25%;
-        left: 60%;
-    }
-    .bikini-gif{
-        width: 12rem;
-        top: 5%;
-        left: 10%;
-    }
-
-}
-
-@media only screen and (max-width: 400px){
-    #projects{
-        height: 100vh;
-        justify-content: flex-start;    
-    }
-   
-    .projects-title{
-        width: 100%;
-        margin: 0 auto 1rem auto;
-        font-family: var(--font-family);
-        font-size: 11vw;
-        writing-mode: horizontal-tb;
-        opacity: 0.5;
-        position: static;
-    }
-    .projects-shadow-bite{
-        max-width: 4rem;
-        left: 34%;
-        top: 35%;
-    }
-    .projects-shadow-run{
-        max-width: 4rem;
-        left: 45%;
-        top: 60%;
-    }
-    .projects-sakurai{
-        max-width: 5rem;
-        top: 40%;
-    }
-    .projects-cph-cartel{
-        max-width: 7rem;
-        top: 20%;
-        left: 30%;
-    }
-    .projects-vinyl{
-        width: 7rem;
-        left: 15%;
-        top: 70%;
-    }
-    .projects-mondrian{
-        max-width: 7rem;
-        bottom: 5%;
-        top: 45%;
-    }
-    .projects-balls{
-        max-width: 7rem;
-        top: 20%;
-        left: 60%;
-    }
-    .bikini-gif{
-        width: 10rem;
-        top: 5%;
-        left: 0%;
-    }
-
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  
+    grid-template-areas: 
+    "hogwarts cartel"
+    "danishcript jazzcup"
+    "sakurai shadow";
+    align-items: center;
 }
 
 
@@ -576,121 +252,124 @@ transition: all 0.5s ease-in-out;
 /* hogwarts */
 
 #hogwarts{
-    width: 100vw;
-    height: 100vh;
-    color: var(--white);
+    width: 45vw;
+    height: 80vh;
+    color: var(--main-font-color);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: url("hogwarts/imgs/hogwarts-staircase.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode:lighten;
-    background-color: #141E27;
+    justify-content: space-around;
     position: relative;
+    grid-area: hogwarts;
+    margin: 0 0 0 5vw;
+    border-right: 2px solid var(--main-font-color);
+    border-bottom: 2px solid var(--main-font-color);
+}
+
+
+.hogwarts-title-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    width: 90%;
 }
 
 .hogwarts-title{
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9vw;
-    margin: 0 auto 2rem auto;
+    font-family: var(--font-family);
+    font-size: 5vw;
+    margin: 0 auto 0rem auto;
 }
 
-.hogwarts-houses-logos{
-    max-width: 10rem;
-    height: auto;
-    border-radius: 50%;
-    filter: drop-shadow(10px 12px 10px black);
-    transition: all 0.5s ease-in-out;
-}
-
-.hogwarts-houses-logos:hover{
-    transform: scale(1.1);
-}
-
-.hogwarts-project-btn{
-    width: 12rem;
-    height: auto;
-    transition: all 0.5s ease-in-out;
-    padding: 5rem 0 0 0;
-
-}
-
-.hogwarts-project-btn:hover{
-    transform: scale(1.1);
+.hogwarts-p{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: var(--main-font-color);
+    line-height: 1.5;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    z-index: 31;
 }
 
 .hogwarts-btn{
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    font-size: 2rem;
-    color: var(--white);
-    background-color:var(--background);
-    transition: all;
-    margin-top: 5rem;
-    padding: 0.5rem 1rem;
-}
-
-.hogwarts-btn:hover{
-    transition-duration: 1s;
-    transition-delay: 0.2s;
-    box-shadow: 2px 4px 4px;
-    border-radius: 5px;
-    color:var(--background);
-    background-color: var(--white);
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 500px){
-    .hogwarts-title{
-        font-family: var(--font-family);
-        font-size: 12vw;
-        margin: 0 auto 2rem auto;
-    }
-}
+    font-family: var(--font-family2);
+     font-weight: 200;
+     font-style: italic;
+     font-size: 1rem;
+     color: var(--main-font-color);
+     transition: all;
+     z-index: 20;
+     padding: 1rem 1.5rem;
+     filter: drop-shadow(2px 4px 2px var(--main-font-color));
+ }
+ 
+ .hogwarts-btn:hover{
+     transition-duration: 1s;
+     transition-delay: 0.2s;
+     box-shadow: 2px 4px 4px;
+     border-radius: 5px;
+     background-color: var(--white);
+     cursor: pointer;
+ }   
 
 
 /* cartel */
 
 #cartel{
-
-    color: var(--white);
+    width: 45vw;
+    height: 80vh;
+    color: var(--main-font-color);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
+    grid-area: cartel;
+    margin: 0 5vw 0 0;
+    border-left: 2px solid var(--main-font-color);
+    border-bottom: 2px solid var(--main-font-color);
+}
 
-   background: url("projects/cartel-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode:lighten;
-    background-color: #141E27;
+
+.cartel-img{
+    width: 30%;
+    border-radius: 30px;
+    filter: drop-shadow(10px 12px 10px var(--background));
+    margin: 0 0 0 2rem;
+}
+
+.cartel-title-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cartel-title{
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9vw;
-    margin-top: 0;
-    margin-bottom: 0rem;
+    font-family: var(--font-family);
+    font-size: 5vw;
+    margin: 0 auto 2rem auto;
 }
+
+.cartel-p{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: var(--main-font-color);
+    height: auto;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    z-index: 31;
+}
+
 
 .cartel-bottle{
     width: 10rem;
     height: auto;
-    position: absolute;
-    left: 45%;
-    bottom: -10%;
     z-index: 20;
     filter: drop-shadow(10px 12px 10px black);
     transition: all 0.5s ease-in-out;
@@ -744,6 +423,8 @@ transform: scale(1.1);
     background-blend-mode:darken;
     background-color: #141E27;
     position: relative;
+    width: 50vw;
+    grid-area: danishcript;
 }
 
 .danishcript-title{
@@ -762,7 +443,7 @@ transform: scale(1.1);
 }
 
 .danishcript-btn{
-    font-family: var(--font-family);
+    font-family: var(--font-family2);
     font-size: 2rem;
     color: var(--white);
     background-color:var(--background);
@@ -852,7 +533,6 @@ transform: scale(1.1);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     z-index: 10;
     background: url("projects/sakurai10.png");
     background-position: top;    
@@ -861,6 +541,8 @@ transform: scale(1.1);
     background-blend-mode:soft-light;
     background-color: #141E27;
     position: relative;
+    width: 50vw;
+    grid-area: sakurai;
 }
 
 .sakurai-title{
@@ -928,7 +610,7 @@ transform: scale(1.1);
 
 
 .sakurai-btn{
-    font-family: var(--font-family);
+    font-family: var(--font-family2);
     font-size: 2rem;
     color: var(--background);
     background-color:var(--white);
@@ -984,7 +666,6 @@ transform: scale(1.1);
      flex-direction: column;
      align-items: center;
      justify-content: center;
-
      background: url("projects/jazzcup-background.png");
      background-position: top;    
      background-repeat: no-repeat;
@@ -992,6 +673,8 @@ transform: scale(1.1);
      background-blend-mode:exclusion;
      background-color: var(--lighter-blue);
     position: relative;
+    width: 50vw;
+    grid-area: jazzcup;
  }
  
  .jazzcup-title{
@@ -1005,7 +688,7 @@ transform: scale(1.1);
  }
 
  .jazzcup-btn{
-     font-family: "ohm-bold", sans-serif;
+    font-family: var(--font-family2);
      font-weight: 200;
      font-style: italic;
      font-size: 2rem;
@@ -1149,12 +832,13 @@ transform: scale(1.1);
      background-blend-mode:unset;
      background-color: var(--white);
     position: relative;
-    width: 100vw;
+    width: 50vw;
+    grid-area: shadow;
 }
 
 .shadow-title{
     font-family: var(--font-family);
-    font-size: 11vw;
+    font-size: 10vw;
     margin-top: 0;
     margin-bottom: 0rem;
 }
@@ -1219,7 +903,7 @@ transform: scale(1.1);
 }
 
 .shadow-btn{
-    font-family: var(--font-family);
+    font-family: var(--font-family2);
     font-size: 2rem;
     color: var(--white);
     background-color:var(--background);
@@ -1258,25 +942,26 @@ transform: scale(1.1);
 
 footer{
     height: 40vh;
-    color: var(--white);
+    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--background);
+    background-color: var(--main-background);
 
     background: url("projects/footer-foot.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     background-blend-mode:lighten;
-    background-color: #141E27;
 
 }
 
 footer > p {
     font-size: 1.2rem;
     margin-left: 5rem;
+    font-family: var(--font-family2);
+
 }
 
 @media only screen and (max-width: 400px){
