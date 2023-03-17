@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-guitars">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="guitars" clip-path="url(#clip-guitars)">
+    <rect width="1920" height="1080" fill="#f8ecec"/>
+    <text id="_Number_One_Les_Paul_Standard" data-name="“Number One” 
+Les Paul Standard" transform="translate(514 301)" font-size="50" font-family="Helvetica" letter-spacing="0.07em"><tspan x="-187.711" y="0">“Number One” </tspan><tspan x="-233.701" y="60">Les Paul Standard</tspan></text>
+    <text id="Danelectro_1961" data-name="Danelectro 1961" transform="translate(1409 331)" font-size="50" font-family="Helvetica" letter-spacing="0.07em"><tspan x="-207.959" y="0">Danelectro 1961</tspan></text>
+    <text id="Fender_Telecaster_1953" data-name="Fender Telecaster 
+1953" transform="translate(514 825)" font-size="50" font-family="Helvetica" letter-spacing="0.07em"><tspan x="-236.354" y="0">Fender Telecaster </tspan><tspan x="-60.865" y="60">1953</tspan></text>
+    <text id="Gibson_J-200_1963" data-name="Gibson J-200 1963" transform="translate(1409 830)" font-size="50" font-family="Helvetica" letter-spacing="0.07em"><tspan x="-239.255" y="0">Gibson J-200 1963</tspan></text>
+    <line id="Line_16" data-name="Line 16" y1="1080" transform="translate(960)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_17" data-name="Line 17" x2="1920" transform="translate(0 579)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

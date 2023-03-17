@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    font-size: 16px;
+    --background: #141E27;
+    --lighter-blue: #2c3e50;
+    --new-blue: #32ccff;
+    --white: #ffffff;
+    --paper: #f5edd9e9;
+    --black: #000000;
+    --font-family: "ohm-bold", sans-serif, "400", normal;
+    --font-family2: "forma-djr-micro", sans-serif;
+    --danishRed: #C8102E;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100%; 
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+}
+
+img{
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+/* HEADER */
+
+nav{
+    width: 100%;
+    position: relative;
+  
+}
+
+.dropdown{
+    height: 10vh;
+    width: 80%;
+    margin: 1rem auto 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    
+}
+
+.nav-logo{
+    width: 5rem;
+}
+
+.contact-btn:hover{
+    border-bottom: 1px solid white;
+
+}
+
+
+.about-btn:hover{
+    border-bottom: 1px solid white;
+}
+
+
+
+.dropdown button{
+    background: none;
+    border: none;
+    color: var(--white);
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .nav-logo{
+        width: 3rem;
+    }
+    .dropdown button{
+        background: none;
+        border: none;
+        color: var(--white);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+/* about */
+
+#jazzcup{
+
+    background-color: #141E27;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.jazzcup-title{
+    font-family: var(--font-family);
+    font-size: 14vw;
+    margin: 15rem auto 3rem auto;
+}
+
+@media only screen and (max-width: 500px){
+    .jazzcup-title{
+        font-size: 16vw;
+    }
+}
+
+/*intro*/
+
+.intro{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+width: 95vw;
+height: auto;
+margin: 2rem auto;
+
+}
+
+.text-img{
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 5rem auto;
+    border: 1px dashed white;
+    padding: 2rem;
+}
+
+.text{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: white;
+    max-width: 60ch;
+    width: 40%;
+    line-height: 1.5;
+    text-align: left;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+.jazzcup-piano{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(10px 12px 10px black);
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 1000px){
+    .text-img{
+        flex-direction: column;
+    }
+    
+    .text{
+        width: 80%;
+        margin: 4rem auto 0 auto;
+    }
+    
+    .jazzcup-piano{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+    .text{
+        width: 90%;
+        margin: 4rem auto 0 auto;
+        font-size: 1rem;
+    }
+    
+    .jazzcup-piano{
+        width: 90%;
+    }
+}
+
+.jazzcup-problem-h2{
+    font-family: var(--font-family2);
+    font-size: 2rem;
+    margin: 1rem auto 2rem auto;
+}
+
+.jazzcup-idea-h2{
+    font-family: var(--font-family2);
+    font-size: 2rem;
+    margin: 2rem auto 2rem auto;
+}
+
+.jazzcup-problem-p{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: white;
+    max-width: 60ch;
+    line-height: 1.5;
+    text-align: left;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+.jazzcup-idea-p{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: white;
+    max-width: 60ch;
+    line-height: 1.5;
+    text-align: left;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+@media only screen and (max-width: 1000px){
+    .jazzcup-problem-p{
+        width: 90%;
+    }
+    
+    .jazzcup-idea-p{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .jazzcup-problem-p{
+        width: 80%;
+        font-size: 1rem;
+    }
+    
+    .jazzcup-idea-p{
+        width: 80%;
+        font-size: 1rem;
+
+    }
+}
+
+/* end */
+
+#end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 2rem auto;
+    border: 4px dotted white;
+    padding: 2rem;
+}
+
+.final-product{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    filter: drop-shadow(2px 2px 4px black);
+    margin-top: 2rem;
+}
+
+.here-span{
+    text-decoration: underline;
+}
+
+.here-span:hover{
+    cursor: pointer;
+}
+
+.fa-github{
+    transform: scale(5);
+    margin: 1rem 0 0 5rem;
+}
+
+@media only screen and (max-width: 500px){
+    .final-product{
+        font-size: 1rem;
+    }
+    .fa-github{
+        transform: scale(3);
+        margin: 1rem 0 0 3rem;
+    }
+}
+
+/* back-to-projects-form */
+
+.back-btn{
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.back-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    .back-btn{
+        font-size: 1rem;
+    }
+}
+
+/* footer */
+
+footer{
+    height: 40vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background);
+    background: url("../projects/footer-foot.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode:lighten;
+    background-color: #141E27;
+
+}
+
+footer > p {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+       <!--ADOBE FONTS-->
+       <link rel="stylesheet" href="https://use.typekit.net/dkr1mpk.css">
+
+
+       <!--Font Awesome-->
+       <script src="https://kit.fontawesome.com/53fa46f6ac.js" crossorigin="anonymous"></script>
+   
+       <link rel="stylesheet" href="hogwarts.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Hogwarts</title>
+</head>
+<body>
+    
+    <!--CONTAINER-->
+
+    <div id="container">
+
+        <header>
+            
+            <nav>
+                
+
+                <div class="dropdown">
+                   
+                   <a href="../index.html"><img class="nav-logo" src="../fblogo3.png" alt="Logo of Federico Barbieri"></a>
+
+                   
+
+                    <div class="about">
+                        <button class="about-btn"><a href="../about/about.html">ABOUT</a></button>
+
+                    </div>
+
+                    <div class="contact-div">
+                        <button class="contact-btn"><a href="../side/side.html">CONTACT</a></button>
+                    </div>
+
+                </div>
+
+                
+
+            </nav>
+            
+        </header>
+
+        <!--MAIN-->
+
+        <main id="hogwarts">
+
+            <h1 class="hogwarts-title">HACKING HOGWARTS</h1>
+
+        <!--INTRO SECTION-->
+
+        <section class="intro">
+
+            <div class="text-img">
+
+
+            <p class="text">
+
+                This is the first big KEA project of the third semester.
+                Pure vanilla JavaScript.
+                The main idea behind this was to create a dashboard
+                so Hogwart's administrator could have an overlook
+                of the students.
+            </p>
+
+            <img class="hogwarts-dashboard" src="imgs/hogwarts-dashboard.png" alt="An image of Hogwart's dashboard">
+
+            </div>
+            
+            <h2 class="official-requirements">Official requirements:</h2>
+            
+            <ul class="requirements-ul">
+                <li>Fetch and clean the data from the JSON files</li>
+                <li>Be able to filter students by house</li>
+                <li>Inquisitorial squad based on blood type condition</li>
+                <li>Two prefects per house max</li>
+                <li>Filter between expelled and non expelled students</li>
+                <li>Hack yourself into the student's list using the keyboard</li>
+            </ul>
+            
+        </section>
+
+        <!--FETCH&CLEAN SECTION-->
+
+        <section class="fetch">
+
+            <h2 class="fetch-h2">FETCH&CLEAN DATA</h2>
+
+            <div class="fetch-functions1-div">
+
+            <p class="fetch-story">
+               I created a function for each piece of information from the student:
+               name, middle name, last name, house, and blood.
+               This made my code reusable, easier to read and to maintain. 
+            </p>
+
+            <img class="functions1-img" src="imgs/functions1.png" alt="A screenshot of functions">
+
+            </div>
+          
+        </section>
+
+        <!--FILTER SECTION-->
+
+        <section class="filter-by-house">
+
+            <h2 class="filter-by-house-h2">FILTER BY HOUSE</h2>
+
+            <div class="houses-and-p">
+
+            <div class="filter-four-houses">
+                <img src="imgs/gryffindor-ok.png" alt="Coat of arms of Gryffindor">
+                <img src="imgs/slytherin-ok.png" alt="Coat of arms of Slytherin">
+                <img src="imgs/ravenclaw-ok.png" alt="Coat of arms of Ravenclaw">
+                <img src="imgs/hufflepuff-ok.png" alt="Coat of arms of Hufflepuff">
+            </div>
+
+            <p class="filter-by-house-p">
+                    By using the filter method, I was able to filter through the
+                    entire array of student objects and display only the ones that
+                    belonged to the selected house.            
+            </p>
+
+            </div>
+
+        </section>
+
+        <!--INQUISITORS SECTION-->
+
+        <section class="inquisitors">
+
+            <h2 class="inquisitors-h2">INQUISITOR SQUAD</h2>
+
+            <div class="inquisitor-p-img">
+
+            <p class="inquisitors-p">
+                Students can only join the inquisitor's squad if they belong to Slytherin 
+                or if they're "pure blood". With this in mind, I developed the logic
+                to make it work.
+            </p>
+
+            <img class="inquisitors-img" src="imgs/inquisitor.png" alt="Inquisitor's function">
+
+        </div>
+
+        </section>
+
+        <section id="end">
+
+        <p class="final-product">See the end result
+            <a href="https://federico-barbieri.github.io/hogwarts/" target="_blank">
+                <span class="here-span">here</span></a>.
+        </p>
+
+        <a href="https://github.com/federico-barbieri/hogwarts" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        </section>
+
+        <form class="back-to-projects-form" action="../index.html#hogwarts">
+            <button class="back-btn">Back to projects</button>
+        </form>
+
+        
+
+        
+        </main>
+
+        <footer>
+            
+            <p>I'm just a footer joke.</p>
+            
+        </footer>
+
+    </div>
+
+
+</body>
+</html>
