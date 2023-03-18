@@ -3,27 +3,27 @@
 
 // hogwarts
 
-const hogwartsProject = document.querySelector('#hogwarts');
+// const hogwartsProject = document.querySelector('#hogwarts');
 
-const hogwartsTitle = document.querySelector('.hogwarts-title');
+// const hogwartsTitle = document.querySelector('.hogwarts-title');
 
-const hogwartsP = document.querySelector('.hogwarts-p');
+// const hogwartsP = document.querySelector('.hogwarts-p');
 
-hogwartsProject.addEventListener('mouseover', () =>{
+// hogwartsProject.addEventListener('mouseover', () =>{
     hogwartsTitle.style.color = "white";
     hogwartsP.style.color = "white";
     setTimeout(gryffindor, 100);
     setTimeout(slytherin, 300);
     setTimeout(ravenclaw, 500);
     setTimeout(hufflepuff, 700);
-})
+// })
 
-hogwartsProject.addEventListener('mouseout', () =>{
+// hogwartsProject.addEventListener('mouseout', () =>{
     hogwartsProject.style.background = "none";
     hogwartsTitle.style.color = "var(--main-font-color)";
     hogwartsP.style.color = "var(--main-font-color)";
 
-})
+// })
 
 function gryffindor(){
     hogwartsProject.style.background = 'url("hogwarts/imgs/gryffindor-ok.png")';
