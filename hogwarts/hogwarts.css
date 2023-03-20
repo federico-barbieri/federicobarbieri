@@ -13,8 +13,11 @@
     --black: #000000;
     --font-family: "ohm-bold", sans-serif, "400", normal;
     --font-family2: "forma-djr-micro", sans-serif;
-
     --danishRed: #C8102E;
+    --main-background: #ede9ea;
+    --main-font-color: #3b3a3c;
+    --main-accent: #d96061;
+    --main-background-darker: #e9ebeb;
 }
 
 a{
@@ -31,7 +34,9 @@ body{
 
 #container{
     width: 100%;
-    height: 100%; 
+    height: auto;
+    background-color: var(--main-background);
+    color: var(--main-font-color);
 }
 
 main{
@@ -40,72 +45,35 @@ main{
     justify-content: flex-start;
     width: 100vw;
     height: auto;
-}
-
-img{
-    filter: drop-shadow(2px 5px 5px black);
+    padding-bottom: 5rem;
 }
 
 /* HEADER */
 
 nav{
-    width: 100%;
+    width: 90%;
     position: relative;
-  
-}
-
-.dropdown{
-    height: 10vh;
-    width: 80%;
-    margin: 1rem auto 0 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    position: absolute;
-    
+    padding: 1rem;
 }
 
 .nav-logo{
-    width: 5rem;
+    max-width: 6rem;
+    padding-left: 1rem;
 }
 
-.contact-btn:hover{
-    border-bottom: 1px solid white;
-
-}
-
-
-.about-btn:hover{
-    border-bottom: 1px solid white;
-}
-
-
-
-.dropdown button{
-    background: none;
-    border: none;
-    color: var(--white);
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+nav > ul {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: var(--font-family2);
     font-size: 2rem;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 500px){
-    .nav-logo{
-        width: 3rem;
-    }
-    .dropdown button{
-        background: none;
-        border: none;
-        color: var(--white);
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1rem;
-        cursor: pointer;
-    }
+    color: var(--main-font-color);
 }
 
 
@@ -113,8 +81,8 @@ nav{
 
 #hogwarts{
 
-    background-color: #141E27;
-    color: white;
+    background-color: var(--main-background);
+    color: var(--main-font-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -151,18 +119,16 @@ margin: 2rem auto;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto 5rem auto;
-    border: 1px dashed white;
     padding: 2rem;
 }
 
 .text{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 60ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
 }
 
 .hogwarts-dashboard{
@@ -182,7 +148,6 @@ margin: 2rem auto;
     text-align: left;
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    border: 1px dashed white;
     padding: 2rem;
 }
 
@@ -242,18 +207,16 @@ margin: 2rem auto;
     width: 90%;
     padding: 3rem;
     margin: 2rem auto;
-    border: 4px dotted white;
     padding: 2rem;
 }
 
 .fetch-h2{
     font-family: var(--font-family2);
     font-size: 2rem;
-    color: white;
+    color: var(--main-font-color);
     width: 100%;
     line-height: 1.5;
     text-align: center;
-    filter: drop-shadow(2px 2px 4px black);
     margin: 2rem auto;
 }
 
@@ -269,11 +232,10 @@ margin: 2rem auto;
 .fetch-story{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 45ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
     padding: 1rem;
 }
 
@@ -281,7 +243,7 @@ margin: 2rem auto;
     width: 50%;
     height: auto;
     border-radius: 10px;
-    filter: drop-shadow(10px 12px 10px black);
+    filter: drop-shadow(2px 4px 2px black);
 }
 
 @media only screen and (max-width: 1000px){
@@ -322,18 +284,16 @@ margin: 2rem auto;
     justify-content: space-around;
     width: 90vw;
     margin: 2rem auto;
-    border: 4px dotted white;
     padding: 2rem;
 }
 
 .filter-by-house-h2{
     font-family: var(--font-family2);
     font-size: 2rem;
-    color: white;
+    color: var(--main-font-color);
     width: 100%;
     line-height: 1.5;
     text-align: center;
-    filter: drop-shadow(2px 2px 4px black);
     margin: 2rem auto;
 }
 
@@ -347,11 +307,10 @@ margin: 2rem auto;
 .filter-by-house-p{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 45ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
     padding: 1rem;
 }
 
@@ -368,7 +327,7 @@ margin: 2rem auto;
     height: auto;
     border-radius: 50%;
     padding: 1rem;
-    filter: drop-shadow(10px 12px 10px black);
+    filter: drop-shadow(2px 4px 2px black);
 }
 
 @media only screen and (max-width: 1270px){
@@ -424,7 +383,6 @@ margin: 2rem auto;
     justify-content: space-around;
     width: 90vw;
     margin: 2rem auto;
-    border: 4px dotted white;
     padding: 2rem;
 }
 
@@ -432,11 +390,10 @@ margin: 2rem auto;
 .inquisitors-h2{
     font-family: var(--font-family2);
     font-size: 2rem;
-    color: white;
+    color: var(--main-font-color);
     width: 100%;
     line-height: 1.5;
     text-align: center;
-    filter: drop-shadow(2px 2px 4px black);
     margin: 2rem auto;
 }
 
@@ -451,11 +408,10 @@ margin: 2rem auto;
 .inquisitors-p{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 45ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
     padding: 1rem;
 }
 
@@ -508,19 +464,15 @@ margin: 2rem auto;
     justify-content: center;
     width: 90vw;
     margin: 2rem auto;
-    border: 4px dotted white;
     padding: 2rem;
 }
 
 .final-product{
-    font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     line-height: 1.5;
     text-align: center;
-    filter: drop-shadow(2px 2px 4px black);
     margin-top: 2rem;
 }
 
@@ -539,14 +491,10 @@ margin: 2rem auto;
 
 @media only screen and (max-width: 500px){
     .final-product{
-        font-family: forma-djr-micro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
         font-size: 1rem;
-        color: white;
+        color: var(--main-font-color);
         line-height: 1.5;
         text-align: center;
-        filter: drop-shadow(2px 2px 4px black);
         margin-top: 2rem;
     }
     .fa-github{
@@ -560,13 +508,15 @@ margin: 2rem auto;
 /* back-to-projects-form */
 
 .back-btn{
-    font-family: var(--font-family);
-    font-size: 1.5rem;
-    color: white;
-    background-color:#141E27;
+    font-family: var(--font-family2);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--main-font-color);
     transition: all;
-    margin: 5rem auto 4rem auto;
-    padding: 0.5rem 1rem;
+    z-index: 20;
+    padding: 1rem 1.5rem;
+    filter: drop-shadow(2px 4px 2px var(--main-font-color));
 }
 
 .back-btn:hover{
@@ -574,51 +524,42 @@ margin: 2rem auto;
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    background-color: var(--white);
     cursor: pointer;
 }
 
 @media only screen and (max-width: 500px){
     .back-btn{
-        font-family: var(--font-family);
         font-size: 1rem;
-        color: white;
-        background-color:#141E27;
         transition: all;
         margin: 5rem auto 4rem auto;
         padding: 0.5rem 1rem;
     }
+
 }
 
 /* footer */
 
 footer{
-    height: 40vh;
-    color: var(--white);
+    height: 20vh;
+    width: 100vw;
+    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-color: var(--background);
-    background: url("../projects/footer-foot.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode:lighten;
-    background-color: #141E27;
-
+    justify-content: center;
+    background-color: var(--main-background);
+    font-family: var(--font-family2);
 }
 
 footer > p {
     font-size: 1.2rem;
-    margin-left: 12rem;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 400px){
     footer > p {
         font-size: 1rem;
-        margin: 0 3rem 2rem 9rem;
     }
 }
 
