@@ -47,9 +47,6 @@ main{
     height: auto;
 }
 
-img{
-    filter: drop-shadow(2px 5px 5px black);
-}
 
 /* HEADER */
 
