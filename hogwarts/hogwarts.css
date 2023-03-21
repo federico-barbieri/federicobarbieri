@@ -76,6 +76,17 @@ nav > ul {
     color: var(--main-font-color);
 }
 
+@media only screen and (max-width: 500px){
+    .nav-logo{
+        max-width: 4rem;
+        padding-left: 1rem;
+    }
+    nav > ul{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+
 
 /* about */
 
@@ -88,14 +99,50 @@ nav > ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     
-    
+}
+
+.big-img{
+    width: 90vw;
+    height: 80vh;
+    background: url("imgs/hogwarts-staircase.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    position: absolute;
+    top: 2%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.main-title{
+    width: 90vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1000px){
+    .main-title{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .hogwarts-title{
+        font-family: var(--font-family);
+        font-size: 14vw;
+        width: 100%;
+        margin: 0rem auto 0rem auto;
+        color: var(--main-font-color);
+    }
 }
 
 .hogwarts-title{
     font-family: var(--font-family);
     font-size: 14vw;
     margin: 15rem auto 3rem auto;
+    color: var(--main-font-color);
 }
 
 /*intro*/
@@ -105,7 +152,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
-width: 95vw;
+width: 90vw;
 height: auto;
 margin: 2rem auto;
 
@@ -113,11 +160,11 @@ margin: 2rem auto;
 
 .text-img{
     display: flex;
-    width: 90%;
+    width: 100%;
     height: auto;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto 5rem auto;
     padding: 2rem;
 }
@@ -126,9 +173,10 @@ margin: 2rem auto;
     font-family: var(--font-family2);
     font-size: 1.5rem;
     color: var(--main-font-color);
-    max-width: 60ch;
+    max-width: 45ch;
     line-height: 1.5;
     text-align: left;
+    padding-right: 1rem;
 }
 
 .hogwarts-dashboard{
@@ -327,7 +375,7 @@ margin: 2rem auto;
     height: auto;
     border-radius: 50%;
     padding: 1rem;
-    filter: drop-shadow(2px 4px 2px black);
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 @media only screen and (max-width: 1270px){
@@ -455,6 +503,87 @@ margin: 2rem auto;
     
 }
 
+/*hack*/
+
+.hack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+
+.hack-h2{
+    font-family: var(--font-family2);
+    font-size: 2rem;
+    color: var(--main-font-color);
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.hack-p-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hack-p{
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    color: var(--main-font-color);
+    max-width: 45ch;
+    line-height: 1.5;
+    text-align: left;
+    padding: 1rem;
+}
+
+.hack-img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(10px 12px 10px black);
+}
+
+@media only screen and (max-width: 1000px){
+    .hack-p-img{
+        flex-direction: column;
+    }
+    
+    .hack-p{
+        max-width: 60ch;
+        padding: 2rem;
+    }
+    
+    .hack-img{
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .hack-p-img{
+        flex-direction: column;
+    }
+    
+    .hack-p{
+        max-width: 60ch;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+    
+    .hack-img{
+        max-width: 100%;
+    }
+    
+}
+
 /* end */
 
 #end{
@@ -517,6 +646,7 @@ margin: 2rem auto;
     z-index: 20;
     padding: 1rem 1.5rem;
     filter: drop-shadow(2px 4px 2px var(--main-font-color));
+    margin: 2rem auto;
 }
 
 .back-btn:hover{
@@ -555,11 +685,15 @@ footer{
 footer > p {
     font-size: 1.2rem;
     padding: 1rem;
+    width: 80%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 400px){
     footer > p {
         font-size: 1rem;
+        padding: 0;
+        width: 70%;
     }
 }
 
