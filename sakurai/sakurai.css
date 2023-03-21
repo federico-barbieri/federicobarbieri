@@ -100,16 +100,47 @@ nav > ul {
     position: relative;
 }
 
-.sakurai-title{
-    font-family: var(--font-family);
-    font-size: 14vw;
-    margin: 15rem auto 3rem auto;
+.big-img{
+    width: 90vw;
+    height: 80vh;
+    background: url("svg/sakurai10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.5;
+    position: absolute;
+    top: 2%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    filter: drop-shadow(10px 12px 10px black);
 }
 
-@media only screen and (max-width: 500px){
-    .sakurai-title{
-        font-size: 17vw;
+.main-title{
+    width: 90vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1000px){
+    .main-title{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
     }
+    .sakurai-title{
+        font-family: var(--font-family);
+        font-size: 14vw;
+        width: 100%;
+        margin: 0rem auto 0rem auto;
+        color: var(--main-font-color);
+    }
+}
+
+.sakurai-title{
+    font-family: var(--font-family);
+    font-size: 12vw;
+    margin: 15rem auto 3rem auto;
+    color: var(--main-font-color);
 }
 
 /*intro*/
