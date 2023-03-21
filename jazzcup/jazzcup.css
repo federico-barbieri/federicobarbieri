@@ -14,6 +14,10 @@
     --font-family: "ohm-bold", sans-serif, "400", normal;
     --font-family2: "forma-djr-micro", sans-serif;
     --danishRed: #C8102E;
+    --main-background: #ede9ea;
+    --main-font-color: #3b3a3c;
+    --main-accent: #d96061;
+    --main-background-darker: #e9ebeb;
 }
 
 a{
@@ -31,6 +35,8 @@ body{
 #container{
     width: 100%;
     height: 100%; 
+    background-color: var(--main-background);
+    color: var(--main-font-color);
 }
 
 main{
@@ -41,69 +47,42 @@ main{
     height: auto;
 }
 
-img{
-    filter: drop-shadow(2px 5px 5px black);
-}
-
 /* HEADER */
 
 nav{
-    width: 100%;
+    width: 90%;
     position: relative;
-  
-}
-
-.dropdown{
-    height: 10vh;
-    width: 80%;
-    margin: 1rem auto 0 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    position: absolute;
-    
+    padding: 1rem;
 }
 
 .nav-logo{
-    width: 5rem;
+    max-width: 6rem;
+    padding-left: 1rem;
 }
 
-.contact-btn:hover{
-    border-bottom: 1px solid white;
-
-}
-
-
-.about-btn:hover{
-    border-bottom: 1px solid white;
-}
-
-
-
-.dropdown button{
-    background: none;
-    border: none;
-    color: var(--white);
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+nav > ul {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: var(--font-family2);
     font-size: 2rem;
-    cursor: pointer;
+    color: var(--main-font-color);
 }
 
 @media only screen and (max-width: 500px){
     .nav-logo{
-        width: 3rem;
+        max-width: 4rem;
+        padding-left: 1rem;
     }
-    .dropdown button{
-        background: none;
-        border: none;
-        color: var(--white);
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-style: normal;
+    nav > ul{
         font-size: 1rem;
-        cursor: pointer;
+        width: 90%;
     }
 }
 
@@ -111,28 +90,57 @@ nav{
 /* about */
 
 #jazzcup{
-
-    background-color: #141E27;
-    color: white;
+    background-color: var(--main-background);
+    color: var(--main-font-color);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+    position: relative;
+}
+
+.big-img{
+    width: 90vw;
+    height: 80vh;
+    background: url("imgs/jazzcup-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    position: absolute;
+    top: 2%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    filter: drop-shadow(10px 12px 10px black);
+}
+
+.main-title{
+    width: 90vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1000px){
+    .main-title{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .jazzcup-title{
+        font-family: var(--font-family);
+        font-size: 14vw;
+        width: 100%;
+        margin: 0rem auto 0rem auto;
+        color: var(--main-font-color);
+    }
 }
 
 .jazzcup-title{
     font-family: var(--font-family);
     font-size: 14vw;
     margin: 15rem auto 3rem auto;
-}
-
-@media only screen and (max-width: 500px){
-    .jazzcup-title{
-        font-size: 16vw;
-    }
+    color: var(--main-font-color);
 }
 
 /*intro*/
@@ -156,19 +164,17 @@ margin: 2rem auto;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto 5rem auto;
-    border: 1px dashed white;
     padding: 2rem;
 }
 
 .text{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 60ch;
     width: 40%;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
 }
 
 .jazzcup-piano{
@@ -222,21 +228,19 @@ margin: 2rem auto;
 .jazzcup-problem-p{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 60ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
 }
 
 .jazzcup-idea-p{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     max-width: 60ch;
     line-height: 1.5;
     text-align: left;
-    filter: drop-shadow(2px 2px 4px black);
 }
 
 @media only screen and (max-width: 1000px){
@@ -271,17 +275,15 @@ margin: 2rem auto;
     justify-content: center;
     width: 90vw;
     margin: 2rem auto;
-    border: 4px dotted white;
     padding: 2rem;
 }
 
 .final-product{
     font-family: var(--font-family2);
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-font-color);
     line-height: 1.5;
     text-align: center;
-    filter: drop-shadow(2px 2px 4px black);
     margin-top: 2rem;
 }
 
@@ -311,13 +313,16 @@ margin: 2rem auto;
 /* back-to-projects-form */
 
 .back-btn{
-    font-family: var(--font-family);
-    font-size: 1.5rem;
-    color: white;
-    background-color:#141E27;
+    font-family: var(--font-family2);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--main-font-color);
     transition: all;
-    margin: 5rem auto 4rem auto;
-    padding: 0.5rem 1rem;
+    z-index: 20;
+    padding: 1rem 1.5rem;
+    filter: drop-shadow(2px 4px 2px var(--main-font-color));
+    margin: 2rem auto;
 }
 
 .back-btn:hover{
@@ -325,37 +330,45 @@ margin: 2rem auto;
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    background-color: var(--white);
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 500px){
     .back-btn{
         font-size: 1rem;
+        transition: all;
+        margin: 5rem auto 4rem auto;
+        padding: 0.5rem 1rem;
     }
+
 }
 
 /* footer */
 
 footer{
-    height: 40vh;
-    color: var(--white);
+    height: 20vh;
+    width: 100vw;
+    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-color: var(--background);
-    background: url("../projects/footer-foot.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode:lighten;
-    background-color: #141E27;
-
+    justify-content: center;
+    background-color: var(--main-background-darker);
+    font-family: var(--font-family2);
 }
 
 footer > p {
     font-size: 1.2rem;
-    margin-left: 5rem;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px){
+    footer > p {
+        font-size: 1rem;
+        padding: 0;
+        width: 70%;
+    }
 }

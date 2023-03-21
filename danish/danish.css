@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 :root{
     font-size: 16px;
     --background: #141E27;
@@ -39,7 +44,7 @@ main{
     align-items: flex-start;
     justify-content: flex-start;
     width: 100vw;
-    background-color: #141E27;
+    height: auto;
 }
 
 /* HEADER */
