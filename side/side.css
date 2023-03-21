@@ -107,14 +107,51 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    position: relative;
 }
 
-.side-title{
+.big-img{
+    width: 90vw;
+    height: 80vh;
+    background: url("../projects/complex-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.5;
+    position: absolute;
+    top: 2%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    filter: drop-shadow(10px 12px 10px black);
+  }
+  
+  .main-title{
+    width: 90vw;
+    height: 100vh;
+  }
+  
+  @media only screen and (max-width: 1000px){
+    .main-title{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .side-title{
+        font-family: var(--font-family);
+        font-size: 14vw;
+        width: 100%;
+        margin: 0rem auto 0rem auto;
+        color: var(--main-font-color);
+    }
+  }
+  
+  .side-title{
     font-family: var(--font-family);
-    font-size: 15vw;
-    margin: 10rem auto 5rem auto;
-}
+    font-size: 12vw;
+    margin: 15rem auto 3rem auto;
+    color: var(--main-font-color);
+  }
 
 .intro-p{
     font-family: var(--font-family2);
