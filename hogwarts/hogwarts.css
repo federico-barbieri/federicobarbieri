@@ -115,6 +115,7 @@ nav > ul {
     top: 2%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
+    filter: drop-shadow(10px 12px 10px black);
 }
 
 .main-title{
@@ -678,7 +679,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-background);
+    background-color: var(--main-background-darker);
     font-family: var(--font-family2);
 }
 
