@@ -122,6 +122,13 @@ nav > ul {
   height: 100vh;
 }
 
+.about-title{
+  font-family: var(--font-family);
+  font-size: 12vw;
+  margin: 15rem auto 3rem auto;
+  color: var(--main-font-color);
+}
+
 @media only screen and (max-width: 1000px){
   .main-title{
       width: 90vw;
@@ -131,18 +138,11 @@ nav > ul {
   }
   .about-title{
       font-family: var(--font-family);
-      font-size: 14vw;
+      font-size: 20vw;
       width: 100%;
       margin: 0rem auto 0rem auto;
       color: var(--main-font-color);
   }
-}
-
-.about-title{
-  font-family: var(--font-family);
-  font-size: 12vw;
-  margin: 15rem auto 3rem auto;
-  color: var(--main-font-color);
 }
 
 
