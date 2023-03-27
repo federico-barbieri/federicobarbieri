@@ -18,6 +18,7 @@
     --main-font-color: #3b3a3c;
     --main-accent: #d96061;
     --main-background-darker: #e9ebeb;
+    --main-new: #F8F7F1;
 }
 
 a{
@@ -35,7 +36,7 @@ body{
 #container{
     width: 100%;
     height: auto;
-    background-color: var(--main-background);
+    background-color: var(--main-new);
     color: var(--main-font-color);
 }
 
@@ -93,7 +94,7 @@ nav > ul {
 
 #hogwarts{
 
-    background-color: var(--main-background);
+    background-color: var(--main-new);
     color: var(--main-font-color);
     text-align: center;
     display: flex;
@@ -680,8 +681,9 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-background-darker);
     font-family: var(--font-family2);
+    background-color: var(--main-background-darker);
+    margin-top: 2rem;
 }
 
 footer > p {
