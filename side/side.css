@@ -60,12 +60,13 @@ section{
 /* HEADER */
 
 nav{
-    width: 90%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1rem;
+    background-color: var(--main-background-darker);
   }
   
   .nav-logo{
@@ -81,7 +82,7 @@ nav{
     justify-content: space-around;
     list-style-type: none;
     font-family: var(--font-family2);
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--main-font-color);
   }
   
