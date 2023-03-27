@@ -89,6 +89,293 @@ nav > ul {
     }
 }
 
+/* INTRODUCTION */
+
+#introduction{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 0 auto 4rem auto;
+}
+
+.h2-admin-dashboard{
+    font-size: 2rem;
+    max-width: 40%;
+    margin: 3rem auto 2rem auto;
+}
+
+.admin-dashboard-p{
+    font-size: 1rem;
+    max-width: 40%;
+    margin: 0rem auto 2rem auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.introduction-spans{
+    text-align: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-github{
+    transform: scale(2);
+    margin: 1rem 1rem 0 0.5rem;
+}
+
+/* FIRST BIG IMAGE SECTION */
+
+#first-big-image-section{
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 4rem auto;
+}
+
+.first-big-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ORGANIZING */
+
+#organizing{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 6rem auto;
+}
+
+.organizing-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.organizing-h3{
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
+
+.organizing-p{
+    font-size: 1rem;
+    max-width: 60%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.organizing-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.organizing-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.scroll-section-image{
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.list-section-image{
+    max-width: 50%;
+    height: auto;
+    padding-right: 1rem;
+    border-radius: 5px;
+}
+
+.snitch-section-image{
+    max-width: 50%;
+    height: auto;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+/* HOUSES SECTION */
+
+#houses{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem auto 4rem auto;
+}
+
+.houses-images{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* ASSETS */
+
+#assets{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 6rem auto;
+}
+
+.assets-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.assets-h3{
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 3rem 0 2rem auto;
+}
+
+.assets-p{
+    font-size: 1rem;
+    max-width: 60%;
+    margin: 0rem 0 2rem auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.assets-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.school-logo-image{
+    max-width: 40%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.owl-image{
+    max-width: 40%;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.golden-snitch-image{
+    max-width: 40%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.hat-image{
+    max-width: 40%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* HACKING */
+
+#hacking{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 6rem auto;
+}
+
+.hacking-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.hacking-h3{
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
+
+.hacking-p{
+    font-size: 1rem;
+    max-width: 60%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.hacking-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.school-on-fire-image{
+    max-width: 80%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.shrek-image{
+    max-width: 80%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+
+
 
 /* about */
 
@@ -104,538 +391,6 @@ nav > ul {
     position: relative;
     
 }
-
-.big-img{
-    width: 90vw;
-    height: 80vh;
-    background: url("imgs/hogwarts-staircase.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    position: absolute;
-    top: 2%;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    filter: drop-shadow(10px 12px 10px black);
-}
-
-.main-title{
-    width: 90vw;
-    height: 100vh;
-}
-
-@media only screen and (max-width: 1000px){
-    .main-title{
-        width: 90vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-    .hogwarts-title{
-        font-family: var(--font-family);
-        font-size: 14vw;
-        width: 100%;
-        margin: 0rem auto 0rem auto;
-        color: var(--main-font-color);
-    }
-}
-
-.hogwarts-title{
-    font-family: var(--font-family);
-    font-size: 14vw;
-    margin: 15rem auto 3rem auto;
-    color: var(--main-font-color);
-}
-
-/*intro*/
-
-.intro{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-width: 90vw;
-height: auto;
-margin: 2rem auto;
-
-}
-
-.text-img{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto 5rem auto;
-    padding: 2rem;
-}
-
-.text{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    max-width: 45ch;
-    line-height: 1.5;
-    text-align: left;
-    padding-right: 1rem;
-}
-
-.hogwarts-dashboard{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    filter: drop-shadow(10px 12px 10px black);
-}
-
-.official-requirements{
-    font-family: var(--font-family2);
-    font-size: 2rem;
-    margin: 1rem auto 2rem auto;  
-}
-
-.requirements-ul{
-    text-align: left;
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    padding: 2rem;
-}
-
-@media only screen and (max-width: 1000px){
-    .text-img{
-        flex-direction: column;
-        padding: 4rem auto;
-    }
-    .text{
-        font-size: 1.5rem;
-        max-width: 60ch;
-        text-align: left;
-        margin: 1rem auto 2rem auto;
-    }
-    
-    .hogwarts-dashboard{
-        width: 90%;
-    }
-    .requirements-ul{
-        padding: 2rem;
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .text-img{
-        flex-direction: column;
-        padding: 4rem auto;
-    }
-    .text{
-        font-size: 1rem;
-        max-width: 60ch;
-        text-align: left;
-        margin: 1rem auto 2rem auto;
-    }
-    
-    .hogwarts-dashboard{
-        width: 100%;
-    }
-    .requirements-ul{
-        padding: 2rem;
-        width: 90%;
-    }
-    .requirements-ul{
-        font-size: 1rem;
-    }
-}
-
-
-/* fetch*/
-
-.fetch{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    padding: 3rem;
-    margin: 2rem auto;
-    padding: 2rem;
-}
-
-.fetch-h2{
-    font-family: var(--font-family2);
-    font-size: 2rem;
-    color: var(--main-font-color);
-    width: 100%;
-    line-height: 1.5;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.fetch-functions1-div{
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.fetch-story{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    max-width: 45ch;
-    line-height: 1.5;
-    text-align: left;
-    padding: 1rem;
-}
-
-.functions1-img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    filter: drop-shadow(2px 4px 2px black);
-}
-
-@media only screen and (max-width: 1000px){
-    .fetch-functions1-div{
-        flex-direction: column;
-    }
-    .fetch-story{
-        max-width: 60ch;
-        padding: 2rem;
-    }
-    
-    .functions1-img{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .fetch-functions1-div{
-        flex-direction: column;
-    }
-    .fetch-story{
-        max-width: 70ch;
-        padding: 2rem;
-        font-size: 1rem;
-    }
-    
-    .functions1-img{
-        width: 100%;
-    }
-}
-
-/*filter-by-house*/
-
-.filter-by-house{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 90vw;
-    margin: 2rem auto;
-    padding: 2rem;
-}
-
-.filter-by-house-h2{
-    font-family: var(--font-family2);
-    font-size: 2rem;
-    color: var(--main-font-color);
-    width: 100%;
-    line-height: 1.5;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.houses-and-p{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.filter-by-house-p{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    max-width: 45ch;
-    line-height: 1.5;
-    text-align: left;
-    padding: 1rem;
-}
-
-.filter-four-houses{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 20rem;
-}
-
-.filter-four-houses > img {
-    width: 10rem;
-    height: auto;
-    border-radius: 50%;
-    padding: 1rem;
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-@media only screen and (max-width: 1270px){
-    .houses-and-p{
-        flex-direction: column;
-        width: 100%;
-    }
-    .filter-four-houses{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: no-wrap;
-        width: 100%;
-        height: auto;
-    }
-    .filter-four-houses > img {
-        width: 8rem;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .houses-and-p{
-        flex-direction: column;
-        width: 100%;
-    }
-    .filter-four-houses{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: no-wrap;
-        width: 100%;
-        height: auto;
-    }
-    .filter-four-houses > img {
-        width: 8rem;
-        height: auto;
-    }
-    .filter-by-house-p{
-        font-size: 1rem;
-        max-width: 60ch;
-        padding: 1rem;
-    }
-}
-
-
-/*inquisitors*/
-
-.inquisitors{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 90vw;
-    margin: 2rem auto;
-    padding: 2rem;
-}
-
-
-.inquisitors-h2{
-    font-family: var(--font-family2);
-    font-size: 2rem;
-    color: var(--main-font-color);
-    width: 100%;
-    line-height: 1.5;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.inquisitor-p-img{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.inquisitors-p{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    max-width: 45ch;
-    line-height: 1.5;
-    text-align: left;
-    padding: 1rem;
-}
-
-.inquisitors-img{
-    max-width: 50%;
-    height: auto;
-    border-radius: 10px;
-    filter: drop-shadow(10px 12px 10px black);
-}
-
-@media only screen and (max-width: 1000px){
-    .inquisitor-p-img{
-        flex-direction: column;
-    }
-    
-    .inquisitors-p{
-        max-width: 60ch;
-        padding: 2rem;
-    }
-    
-    .inquisitors-img{
-        max-width: 100%;
-    }
-    
-}
-
-@media only screen and (max-width: 500px){
-    .inquisitor-p-img{
-        flex-direction: column;
-    }
-    
-    .inquisitors-p{
-        max-width: 60ch;
-        padding: 2rem;
-        font-size: 1rem;
-    }
-    
-    .inquisitors-img{
-        max-width: 100%;
-    }
-    
-}
-
-/*hack*/
-
-.hack{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 90vw;
-    margin: 2rem auto;
-    padding: 2rem;
-}
-
-
-.hack-h2{
-    font-family: var(--font-family2);
-    font-size: 2rem;
-    color: var(--main-font-color);
-    width: 100%;
-    line-height: 1.5;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.hack-p-img{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.hack-p{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    max-width: 45ch;
-    line-height: 1.5;
-    text-align: left;
-    padding: 1rem;
-}
-
-.hack-img{
-    max-width: 30%;
-    height: auto;
-    border-radius: 10px;
-    filter: drop-shadow(10px 12px 10px black);
-}
-
-@media only screen and (max-width: 1000px){
-    .hack-p-img{
-        flex-direction: column;
-    }
-    
-    .hack-p{
-        max-width: 60ch;
-        padding: 2rem;
-    }
-    
-    .hack-img{
-        max-width: 100%;
-    }
-    
-}
-
-@media only screen and (max-width: 500px){
-    .hack-p-img{
-        flex-direction: column;
-    }
-    
-    .hack-p{
-        max-width: 60ch;
-        padding: 2rem;
-        font-size: 1rem;
-    }
-    
-    .hack-img{
-        max-width: 100%;
-    }
-    
-}
-
-/* end */
-
-#end{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    margin: 2rem auto;
-    padding: 2rem;
-}
-
-.final-product{
-    font-family: var(--font-family2);
-    font-size: 1.5rem;
-    color: var(--main-font-color);
-    line-height: 1.5;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.here-span{
-    text-decoration: underline;
-}
-
-.here-span:hover{
-    cursor: pointer;
-}
-
-.fa-github{
-    transform: scale(5);
-    margin: 1rem 0 0 5rem;
-}
-
-@media only screen and (max-width: 500px){
-    .final-product{
-        font-size: 1rem;
-        color: var(--main-font-color);
-        line-height: 1.5;
-        text-align: center;
-        margin-top: 2rem;
-    }
-    .fa-github{
-        transform: scale(3);
-        margin: 1rem 0 0 3rem;
-    }
-}
-
-
 
 /* back-to-projects-form */
 

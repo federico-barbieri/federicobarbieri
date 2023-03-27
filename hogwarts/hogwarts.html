@@ -41,151 +41,121 @@
 
         <main id="hogwarts">
 
-            <div class="big-img"></div>
+            <section id="introduction">
 
-            <div class="main-title">
+            <h2 class="h2-admin-dashboard"><strong>An admin dashboard with medieval aesthetics to sort, search, 
+                filter and expell Hogwarts' students.</strong>
+            </h2>
 
-            <h1 class="hogwarts-title">HACKING HOGWARTS</h1>
+            <p class="admin-dashboard-p">
 
-        </div>
-
-            
-
-        <!--INTRO SECTION-->
-
-        <section class="intro">
-
-            <div class="text-img">
-
-
-            <p class="text">
-
-                This is the first big KEA project of the third semester.
-                Pure vanilla JavaScript.
+                This is a thorough KEA project of the third semester, 
+                to improve our vanilla JS abilities and expand our
+                knowledge of sorting, mapping and filtering.
+                
                 The main idea behind this was to create a dashboard
                 so Hogwart's administrator could have an overlook
                 of the students.
             </p>
 
-            <img class="hogwarts-dashboard" src="imgs/hogwarts-dashboard.png" alt="An image of Hogwart's dashboard">
+            <div class="introduction-spans">
 
-            </div>
+                <span class="visit-site-span">Visit site</span>
+                <span class="link-to-site-span">
+                    
+                    <a href="https://github.com/federico-barbieri/hogwarts" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                    <a href="https://federico-barbieri.github.io/hogwarts/" target="_blank">
+                    <em><strong>Hacking Hogwarts</strong></em> 
+                    </a>
+                    
+                </span>   
             
-            <h2 class="official-requirements">Official requirements:</h2>
-            
-            <ul class="requirements-ul">
-                <li>Fetch and clean the data from the JSON files</li>
-                <li>Be able to filter students by house</li>
-                <li>Inquisitorial squad based on blood type condition</li>
-                <li>Two prefects per house max</li>
-                <li>Filter between expelled and non expelled students</li>
-                <li>Hack yourself into the student's list using the keyboard</li>
-            </ul>
-            
+            </div>   
+
         </section>
 
-        <!--FETCH&CLEAN SECTION-->
+        <!-- FIRST BIG IMAGE -->
 
-        <section class="fetch">
-
-            <h2 class="fetch-h2">FETCH&CLEAN DATA</h2>
-
-            <div class="fetch-functions1-div">
-
-            <p class="fetch-story">
-               I created a function for each piece of information from the student:
-               name, middle name, last name, house, and blood.
-               This made my code reusable, easier to read and to maintain. 
-            </p>
-
-            <img class="functions1-img" src="imgs/functions1.png" alt="A screenshot of functions">
-
-            </div>
-          
+        <section id="first-big-image-section">
+            <img class="first-big-img" src="imgs/hogwarts-dashboard.png" alt="Screenshot of Hogwart's dashboard">
         </section>
 
-        <!--FILTER SECTION-->
 
-        <section class="filter-by-house">
+        <!-- ORGANIZING SECTION -->
 
-            <h2 class="filter-by-house-h2">FILTER BY HOUSE</h2>
-
-            <div class="houses-and-p">
-
-            <div class="filter-four-houses">
-                <img src="imgs/gryffindor-ok.png" alt="Coat of arms of Gryffindor">
-                <img src="imgs/slytherin-ok.png" alt="Coat of arms of Slytherin">
-                <img src="imgs/ravenclaw-ok.png" alt="Coat of arms of Ravenclaw">
-                <img src="imgs/hufflepuff-ok.png" alt="Coat of arms of Hufflepuff">
+        <section id="organizing">
+            <div class="organizing-text">
+                <h3 class="organizing-h3">Organizing the sections</h3>
+                <p class="organizing-p">I divided the dashboard in 3:
+                    the top part is a scrollable bar that allows me to display
+                    all the different filters the admin can use. The bottom part
+                    is divided between the actual list of students and a computer game
+                     the admin can play.
+                </p>
             </div>
 
-            <p class="filter-by-house-p">
-                    By using the filter method, I was able to filter through the
-                    entire array of student objects and display only the ones that
-                    belonged to the selected house.            
-            </p>
+            <div class="organizing-images">
+                <img class="scroll-section-image" src="imgs/scroll-section.png" alt="Screenshot of scrollable bar">
+                <div class="organizing-bottom">
+                    <img class="list-section-image" src="imgs/list-section.png" alt="Screenshot of list of students">
+                    <img class="snitch-section-image" src="imgs/snitch-section.png" alt="Screenshot of snitch game">
+                </div>    
+            </div>
+        </section>
 
+        <!--HOUSE COAT SECTION -->
+
+        <section id="houses">
+            <img class="houses-images" src="imgs/new-houses.png" alt="Coat of arms of each house">
+        </section>
+
+        <!-- ASSETS -->
+
+        <section id="assets">
+            <div class="assets-text">
+                <h3 class="assets-h3">Creation of assets</h3>
+                <p class="assets-p">All the assets in this project were
+                    created using DALL-E and Photoshop. This gave me the 
+                    opportunity to establish a specific medieval aesthetic,
+                    and obtain elements as imagined by Hieronymous Bosch.
+                </p>
             </div>
 
+            <div class="assets-images">
+                <img class="owl-image" src="imgs/school-logo.png" alt="school logo">
+                <img class="school-logo-image" src="imgs/see-project-btn.png" alt="owl">
+                <img class="golden-snitch-image" src="imgs/golden-snitch.png" alt="snitch">
+                <img class="hat-image" src="imgs/hat.png" alt="hat">
+
+            </div>
         </section>
 
-        <!--INQUISITORS SECTION-->
+        <!-- HACKING SECTION -->
 
-        <section class="inquisitors">
+        <section id="hacking">
+            <div class="hacking-text">
+                <h3 class="hacking-h3">Hacking the system</h3>
+                <p class="hacking-p">The ultimate requirement for this project 
+                    is to create a hacking feature. If you press the key "5", 
+                    you will literally turn Hogwarts into flames. In addition, 
+                    a new, mysterious student will be injected to the list with 
+                    the added condition of being unexpellable. 
+                </p>
+            </div>
 
-            <h2 class="inquisitors-h2">INQUISITOR SQUAD</h2>
-
-            <div class="inquisitor-p-img">
-
-            <p class="inquisitors-p">
-                Students can only join the inquisitor's squad if they belong to Slytherin 
-                or if they're "pure blood". With this in mind, I developed the logic
-                to make it work.
-            </p>
-
-            <img class="inquisitors-img" src="imgs/inquisitor.png" alt="Inquisitor's function">
-
-        </div>
-
-        </section>
-
-         <!--HACK SECTION-->
-
-         <section class="hack">
-
-            <h2 class="hack-h2">HACKING THE SYSTEM</h2>
-
-            <div class="hack-p-img">
-
-            <p class="hack-p">
-                The system can be hacked by pressing the key "5". This will change
-                the background image, inject a new student to the list and make him
-                non-expellable. 
-            </p>
-
-            <img class="hack-img" src="imgs/castle-fire.webp" alt="Hogwarts on fire">
-
-        </div>
-
-        </section>
-
-        <section id="end">
-
-        <p class="final-product">See the end result
-            <a href="https://federico-barbieri.github.io/hogwarts/" target="_blank">
-                <span class="here-span">here</span></a>.
-        </p>
-
-        <a href="https://github.com/federico-barbieri/hogwarts" target="_blank"><i class="fa-brands fa-github"></i></a>
-
+            <div class="hacking-images">
+                <img class="school-on-fire-image" src="imgs/castle-fire.webp" alt="Hogwarts on fire">
+                <img class="shrek-image" src="imgs/shrek-img.png" alt="Shrek card">
+            </div>
         </section>
 
         <form class="back-to-projects-form" action="../index.html#hogwarts">
                     
             <button class="back-btn">BACK TO PROYECTS</button>
         </form> 
-
-        
 
         
         </main>
