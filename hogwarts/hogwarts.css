@@ -49,6 +49,20 @@ main{
     padding-bottom: 5rem;
 }
 
+/* MAIN */
+
+#hogwarts{
+
+    background-color: var(--main-new);
+    color: var(--main-font-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
 /* HEADER */
 
 nav{
@@ -129,6 +143,64 @@ nav > ul {
     margin: 1rem 1rem 0 0.5rem;
 }
 
+@media only screen and (max-width: 800px){
+    /* INTRODUCTION */
+
+#introduction{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 0 auto 0rem auto;
+}
+
+.h2-admin-dashboard{
+    font-size: 2rem;
+    max-width: 70%;
+}
+
+.admin-dashboard-p{
+    max-width: 70%;
+}
+
+.introduction-spans{
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 500px){
+    /* INTRODUCTION */
+
+#introduction{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 0 auto 0rem auto;
+}
+
+.h2-admin-dashboard{
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+
+.admin-dashboard-p{
+    max-width: 80%;
+}
+
+.introduction-spans{
+    width: 80%;
+}
+}
+
 /* FIRST BIG IMAGE SECTION */
 
 #first-big-image-section{
@@ -147,18 +219,33 @@ nav > ul {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 800px){
+    #first-big-image-section{
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #first-big-image-section{
+        width: 80vw;
+        height: 30vh;
+        margin: 0 auto 2rem auto;
+
+    }
+}
+
 /* ORGANIZING */
 
 #organizing{
     width: 70vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
     font-family: var(--font-family2);
-    margin: 6rem auto;
+    margin: 6rem auto 0rem auto;
 }
 
 .organizing-text{
@@ -187,12 +274,11 @@ nav > ul {
 
 .organizing-images{
     width: 100%;
-    height: 65%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
 }
 
 .organizing-bottom{
@@ -223,6 +309,121 @@ nav > ul {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 800px){
+    /* ORGANIZING */
+
+#organizing{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 6rem auto 0 auto;
+}
+
+.organizing-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.organizing-h3{
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
+
+.organizing-p{
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.organizing-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.organizing-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 500px){
+    /* ORGANIZING */
+
+#organizing{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 2rem auto 0 auto;
+}
+
+.organizing-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.organizing-h3{
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
+
+.organizing-p{
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.organizing-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+
+.organizing-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+}
+
 /* HOUSES SECTION */
 
 #houses{
@@ -239,6 +440,18 @@ nav > ul {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px){
+    #houses{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 6rem auto 2rem auto;
+    }
 }
 
 
@@ -287,7 +500,6 @@ nav > ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
 }
 
 .school-logo-image{
@@ -312,6 +524,146 @@ nav > ul {
     max-width: 40%;
     padding-bottom: 1rem;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px){
+    #assets{
+        width: 70vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: left;
+        font-family: var(--font-family2);
+        margin: 6rem auto 3rem auto;
+    }
+    
+    .assets-text{
+        text-align: left;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 0 auto 0 0;
+    }
+    
+    .assets-h3{
+        font-size: 1.5rem;
+        max-width: 100%;
+        margin: 3rem auto 2rem 0;
+    }
+    
+    .assets-p{
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0rem auto 2rem 0;
+    }
+    
+    .assets-images{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .school-logo-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
+    
+    .owl-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 50%;
+    }
+    
+    .golden-snitch-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
+    
+    .hat-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #assets{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: left;
+        font-family: var(--font-family2);
+        margin: 4rem auto 3rem auto;
+    }
+    
+    .assets-text{
+        text-align: left;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 0 auto 0 0;
+    }
+    
+    .assets-h3{
+        font-size: 1.3rem;
+        max-width: 100%;
+        margin: 3rem auto 2rem 0;
+    }
+    
+    .assets-p{
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0rem auto 2rem 0;
+    }
+    
+    .assets-images{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .school-logo-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
+    
+    .owl-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 50%;
+    }
+    
+    .golden-snitch-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
+    
+    .hat-image{
+        max-width: 40%;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+    }
 }
 
 /* HACKING */
@@ -359,38 +711,142 @@ nav > ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
 }
 
 .school-on-fire-image{
-    max-width: 80%;
+    max-width: 100%;
     padding-bottom: 1rem;
     border-radius: 5px;
 }
 
 .shrek-image{
-    max-width: 80%;
+    max-width: 100%;
     padding-bottom: 1rem;
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 800px){
+    /* HACKING */
 
+#hacking{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 6rem auto;
+}
 
+.hacking-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
-/* about */
+.hacking-h3{
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
 
-#hogwarts{
+.hacking-p{
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
 
-    background-color: var(--main-new);
-    color: var(--main-font-color);
-    text-align: center;
+.hacking-images{
+    width: 100%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    
+    justify-content: space-between;
 }
+
+.school-on-fire-image{
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.shrek-image{
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+}
+
+@media only screen and (max-width: 500px){
+    /* HACKING */
+
+#hacking{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: var(--font-family2);
+    margin: 2rem auto;
+}
+
+.hacking-text{
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.hacking-h3{
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 3rem auto 2rem 0;
+}
+
+.hacking-p{
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0rem auto 2rem 0;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.hacking-images{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.school-on-fire-image{
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.shrek-image{
+    max-width: 100%;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+}
+
 
 /* back-to-projects-form */
 
