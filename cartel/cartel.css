@@ -114,7 +114,7 @@ nav > ul {
     justify-content: flex-start;
     text-align: left;
     font-family: var(--font-family2);
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 2rem auto;
 }
 
 .h2-admin-dashboard{
@@ -204,13 +204,13 @@ nav > ul {
 /* FIRST BIG IMAGE SECTION */
 
 #first-big-image-section{
-    width: 70vw;
-    height: 50vh;
+    width: 60vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 2rem auto;
 }
 
 .first-big-img{
@@ -221,23 +221,20 @@ nav > ul {
 
 @media only screen and (max-width: 800px){
     #first-big-image-section{
-        height: 30vh;
+        width: 70vw;
     }
 }
 
 @media only screen and (max-width: 500px){
     #first-big-image-section{
         width: 80vw;
-        height: 30vh;
-        margin: 0 auto 2rem auto;
-
     }
 }
 
 /* ORGANIZING */
 
 #organizing{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -429,7 +426,7 @@ nav > ul {
 /* ASSETS */
 
 #assets{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -586,7 +583,7 @@ nav > ul {
 /* HACKING */
 
 #hacking{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
