@@ -149,41 +149,132 @@ nav > ul {
 
 .flexy{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 95vw;
+width: 100vw;
 height: auto;
 margin: 2rem auto;
+font-family: var(--font-family2);
+font-size: 1.5rem;
+color: var(--main-font-color);
 }
 
-.text{
+.flexy-txts{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text1{
     font-family: var(--font-family2);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--main-font-color);
-    width: 50%;
+    width: 45%;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
+}
+
+.text2{
+  font-family: var(--font-family2);
+  font-size: 1.5rem;
+  color: var(--main-font-color);
+  width: 45%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.bureaucracy{
+  margin-top: 4rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1000px){
-  .text{
+  .flexy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 2rem auto;
     font-family: var(--font-family2);
-    font-size: 2rem;
-    color: var(--main-font-color);    width: 80%;
-    line-height: 1.5;
-    text-align: left;
-}
+    font-size: 1rem;
+    color: var(--main-font-color);
+    }
+    
+    .flexy-txts{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .text1{
+        font-family: var(--font-family2);
+        color: var(--main-font-color);
+        width: 100%;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    .text2{
+      font-family: var(--font-family2);
+      color: var(--main-font-color);
+      width: 100%;
+      line-height: 1.5;
+      text-align: left;
+    }
+    
+    .bureaucracy{
+      margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width: 500px){
-  .text{
+  .flexy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 2rem auto;
     font-family: var(--font-family2);
     font-size: 1rem;
-    color: var(--main-font-color);    width: 80%;
-    line-height: 1.5;
-    text-align: left;
-}
+    color: var(--main-font-color);
+    }
+    
+    .flexy-txts{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .text1{
+        font-family: var(--font-family2);
+        color: var(--main-font-color);
+        width: 100%;
+        line-height: 1.5;
+        text-align: left;
+    }
+    
+    .text2{
+      font-family: var(--font-family2);
+      color: var(--main-font-color);
+      width: 100%;
+      line-height: 1.5;
+      text-align: left;
+    }
+    
+    .bureaucracy{
+      margin-top: 4rem;
+    }
 }
 
 
