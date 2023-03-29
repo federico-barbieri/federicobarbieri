@@ -204,7 +204,7 @@ nav > ul {
 /* FIRST BIG IMAGE SECTION */
 
 #first-big-image-section{
-    width: 70vw;
+    width: 60vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -221,14 +221,13 @@ nav > ul {
 
 @media only screen and (max-width: 800px){
     #first-big-image-section{
-        height: 30vh;
+        width: 70vw;
     }
 }
 
 @media only screen and (max-width: 500px){
     #first-big-image-section{
         width: 80vw;
-        height: 30vh;
         margin: 0 auto 2rem auto;
 
     }
@@ -237,7 +236,7 @@ nav > ul {
 /* ORGANIZING */
 
 #organizing{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -427,7 +426,7 @@ nav > ul {
 /* HOUSES SECTION */
 
 #houses{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -440,6 +439,18 @@ nav > ul {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px){
+    #houses{
+        width: 70vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 6rem auto 2rem auto;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -458,7 +469,7 @@ nav > ul {
 /* ASSETS */
 
 #assets{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -669,7 +680,7 @@ nav > ul {
 /* HACKING */
 
 #hacking{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     flex-direction: column;
