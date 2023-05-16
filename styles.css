@@ -259,6 +259,9 @@ nav > ul {
         grid-area: hogwarts;
         margin: 0 0 0 0vw;
     }
+    .hogwarts-p{
+        font-size: 1rem;
+    }
 }
 
 
@@ -345,6 +348,9 @@ nav > ul {
         margin: 0 0 0 0;
         border: none;
     }
+    .cartel-p{
+      font-size: 1rem;  
+    }
 }
 
 .cartel-title-btn{
@@ -427,6 +433,9 @@ nav > ul {
         grid-area: danishcript;
         margin: 0 0vw 0 0vw;
         border: none;
+    }
+    .danishcript-p{
+        font-size: 1rem;
     }
 }
 
@@ -527,6 +536,9 @@ nav > ul {
         grid-area: jazzcup;
         margin: 0 0vw 0 0vw;
     }
+    .jazzcup-p{
+        font-size: 1rem;
+    }
 }
 
 .jazzcup-title-btn{
@@ -607,6 +619,9 @@ nav > ul {
         position: relative;
         grid-area: sakurai;
         margin: 0 0vw 0 0vw;
+    }
+    .sakurai-p{
+        font-size: 1rem;
     }
 }
 
@@ -692,6 +707,9 @@ nav > ul {
         grid-area: shadow;
         margin: 0 0vw 0 0vw;
         border: none;
+    }
+    .shadow-p{
+        font-size: 1rem;
     }
 }
 
