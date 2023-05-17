@@ -214,7 +214,7 @@ nav > ul {
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
         grid-template-areas: 
         "hogwarts"
         "cartel"
