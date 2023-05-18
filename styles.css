@@ -203,7 +203,7 @@ nav > ul {
     gap: 1rem;
     grid-template-areas: 
     "hogwarts cartel"
-    "danishcript jazzcup"
+    "jazzcup danishcript"
     "sakurai shadow";
     align-items: center;
 }
