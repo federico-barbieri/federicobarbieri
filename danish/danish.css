@@ -19,6 +19,8 @@
     --main-accent: #d96061;
     --main-background-darker: #e9ebeb;
     --main-new: #F8F7F1;
+    --back-color-may: #FEFEFE;
+
 }
 
 a{
@@ -36,7 +38,8 @@ body{
 #container{
     width: 100%;
     height: auto;
-    background-color: var(--main-new);
+    background-color: var(--back-color-may);
+
     color: var(--main-font-color);
 }
 
@@ -53,7 +56,8 @@ main{
 
 #danishcript{
 
-    background-color: var(--main-new);
+    background-color: var(--back-color-may);
+
     color: var(--main-font-color);
     text-align: center;
     display: flex;
@@ -802,15 +806,17 @@ nav > ul {
 /* footer */
 
 footer{
-    height: 20vh;
-    width: 100vw;
+    height: 80vh;
     color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: var(--font-family2);
-    background-color: var(--main-background-darker);
+    justify-content: space-around;
+    background: url("../footerImg/grass4.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+ /*   background-color: var(--main-background-darker); */
     margin-top: 2rem;
 }
 

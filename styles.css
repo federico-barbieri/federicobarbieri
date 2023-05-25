@@ -19,6 +19,7 @@
     --main-accent: #d96061;
     --main-background-darker: #e9ebeb;
     --main-new: #F8F7F1;
+    --back-color-may: #FEFEFE;
 }
 
 body{
@@ -44,7 +45,8 @@ a:visited{
 #container{
     width: 100%;
     height: auto;
-    background-color: var(--main-new);
+   /* background-color: var(--main-new); */
+    background-color: var(--back-color-may)
     
 }
 
@@ -199,12 +201,11 @@ nav > ul {
     display: grid;
     height: auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: 
-    "hogwarts cartel"
-    "jazzcup danishcript"
-    "shadow sakurai";
+    "danishcript hogwarts"
+    "jazzcup sakurai";
     align-items: center;
 }
 
@@ -213,15 +214,13 @@ nav > ul {
         display: grid;
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 1.5rem;
         grid-template-areas: 
-        "hogwarts"
-        "cartel"
         "danishcript"
+        "hogwarts"
         "jazzcup"
-        "sakurai"
-        "shadow";
+        "sakurai";
         align-items: center;
     }
 }
@@ -241,7 +240,7 @@ nav > ul {
     justify-content: space-around;
     position: relative;
     grid-area: hogwarts;
-    margin: 0 0 0 5vw;
+    margin: 0 0 0 0vw;
 }
 
 
@@ -299,19 +298,23 @@ nav > ul {
      font-size: 1rem;
      color: var(--main-font-color);
      transition: all;
-     z-index: 20;
+     z-index: 31;
      padding: 1rem 1.5rem;
      filter: drop-shadow(2px 4px 2px var(--main-font-color));
+     background-color: var(--white);
  }
  
  .hogwarts-btn:hover{
-     transition-duration: 1s;
-     transition-delay: 0.2s;
-     box-shadow: 2px 4px 4px;
-     border-radius: 5px;
-     background-color: var(--white);
-     cursor: pointer;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:var(--background);
+    background-color: var(--white);
+    cursor: pointer;
  }   
+
+
 
 
 /* cartel */
@@ -413,10 +416,8 @@ nav > ul {
     justify-content: space-around;
     position: relative;
     grid-area: danishcript;
-    margin: 0 0vw 0 5vw;
-    border-top: 2px solid var(--main-font-color);
-    border-right: 2px solid var(--main-font-color);
-    border-bottom: 2px solid var(--main-font-color);
+    margin: 0 0vw 0 0;
+
 }
 
 @media only screen and (max-width: 500px){
@@ -489,6 +490,8 @@ nav > ul {
 }
 
 
+
+
 .danish-flag{
     position: absolute;
     width: 5rem;
@@ -519,7 +522,7 @@ nav > ul {
     justify-content: space-around;
     position: relative;
     grid-area: jazzcup;
-    margin: 0 5vw 0 0vw;
+    margin: 0 0vw 0 0vw;
 }
 
 @media only screen and (max-width: 500px){
@@ -603,7 +606,7 @@ nav > ul {
     justify-content: space-around;
     position: relative;
     grid-area: sakurai;
-    margin: 0 5vw 0 0vw;
+    margin: 0 0vw 0 0vw;
 }
 
 @media only screen and (max-width: 500px){
@@ -768,17 +771,17 @@ nav > ul {
 /* footer */
 
 footer{
-    height: 30vh;
+    height: 80vh;
     color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: url("projects/footer-foot.png");
-    background-position: bottom;
+    background: url("footerImg/grass4.png");
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--main-background-darker);
+    background-size: cover;
+ /*   background-color: var(--main-background-darker); */
     margin-top: 2rem;
 }
 
